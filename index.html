@@ -1,34 +1,77 @@
+
+
 <!DOCTYPE html>
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bem-vindo ao Meu Site</title>
+  <title>Álbum da Copa</title>
+  <link rel="stylesheet" href="style.css">
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-    header, footer { background-color: #333; color: white; text-align: center; padding: 1rem; }
-    main { padding: 2rem; }
-    h1 { color: #333; }
+    .pais {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      margin-bottom: 2rem;
+      padding: 1rem;
+      border-radius: 10px;
+    }
+    .jogadores {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .jogador {
+      flex: 1 0 21%;
+      background-color: #f0f0f0;
+      padding: 10px;
+      text-align: center;
+      border-radius: 8px;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Meu Site</h1>
-    <p>Bem-vindo ao meu site pessoal</p>
+    <h1>Álbum da Copa do Mundo</h1>
+    <p>Descobre todos os países e jogadores participantes!</p>
   </header>
+
   <main>
-    <section>
-      <h2>Sobre Mim</h2>
-      <p>Olá! Este é um exemplo de um site simples feito com HTML.</p>
+    <section class="pais">
+      <h2>Brasil</h2>
+      <div class="jogadores">
+        <div class="jogador">Alisson - GR</div>
+        <div class="jogador">Thiago Silva - DEF</div>
+        <div class="jogador">Casemiro - MED</div>
+        <div class="jogador">Neymar - ATA</div>
+      </div>
     </section>
-    <section>
-      <h2>Contactos</h2>
-      <p>Email: exemplo@dominio.com</p>
+
+    <section class="pais">
+      <h2>Portugal</h2>
+      <div class="jogadores">
+        <div class="jogador">Diogo Costa - GR</div>
+        <div class="jogador">Rúben Dias - DEF</div>
+        <div class="jogador">Bruno Fernandes - MED</div>
+        <div class="jogador">Cristiano Ronaldo - ATA</div>
+      </div>
     </section>
+
+    <section class="pais">
+      <h2>França</h2>
+      <div class="jogadores">
+        <div class="jogador">Lloris - GR</div>
+        <div class="jogador">Varane - DEF</div>
+        <div class="jogador">Griezmann - MED</div>
+        <div class="jogador">Mbappé - ATA</div>
+      </div>
+    </section>
+
+    <!-- Adicionar mais países e jogadores conforme necessário -->
+
   </main>
+
   <footer>
-    <p>&copy; 2025 Meu Nome. Todos os direitos reservados.</p>
+    <p>&copy; 2025 Álbum da Copa. Todos os direitos reservados.</p>
   </footer>
 </body>
 </html>
-
